@@ -6,9 +6,8 @@ const router = require("express").Router();
 //Place all the controller queries into a router
 
 // router.get("/", userController.getAllIncome);
-router.post("/register", userController.createUserAcct);
+router.post("/register", userController.registerUser);
 router.post("/login", userController.userAuth);
-// router.put("/:id", incomeController.updateIncome);
-// router.delete("/:id", incomeController.deleteIncomeRecord);
+router.get("/lists", userController.getAllUser);
 
 module.exports = router;
